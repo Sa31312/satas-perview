@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,700;1,600&family=Inter:wght@400;700&family=Poppins:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root{
+      --Verydarkbluemain: hsl(233, 47%, 7%);
+      --Darkdesaturatedbluecard: hsl(244, 38%, 16%);
+      --Softvioletaccent: hsl(277, 64%, 61%);
+      --Whitemainheading: hsl(0, 0%, 100%);
+      --Slightlyparagraph: hsla(0, 0%, 100%, 0.75);
+      --Slightlystat: hsla(0, 0%, 100%, 0.6);
+    }
+    body{
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: var(--Verydarkbluemain);
+    }
+    .container{
+      background-color: var(--Softvioletaccent);
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .con {
+      
+      
+      margin-top: 10px;
+      background-color: var(--Softvioletaccent);
+      border-radius: 0px 10px 10px 0px ;
+      
+    }
+    .con img{
+      mix-blend-mode: overlay;
+      width: 300px;
+      height: 265px;
+    }
+    .left{
+      background-color: var(--Darkdesaturatedbluecard);
+      text-align: center;
+      font-size: 15px;
+      margin-top: -10px;
+      border-radius: 10px 0px 0px 10px ;
+      margin-left: 15px;
+    }
+    .left h1{
+      color: var(--Whitemainheading);
+      font-weight: 700;
+      width: 350px;
+      padding-top: 20px;
+    }
+    .left span{
+      color: var(--Softvioletaccent);
+    }
+    .left p{
+      text-align: left;
+     width: 390px;
+     margin-left: 30px;
+      color: var(--Slightlyparagraph);
+    }
+    .pa{
+      font-size: 15px!important;
+      color: var(--Whitemainheading)!important;
+      font-weight: 700;
+      
+    }
+    .as{
+      width:420px;
+      border: 0px;
+      margin-left: 15px;
+      border-spacing: 0px;
+      border-collapse: collapse;
+      margin-top: -10px;
+      background-color: var(--Darkdesaturatedbluecard);
+      color: var(--Slightlystat);
+      border-radius: 0px 0px 0px 10px;
+    }
+    table{
+      border: 0px;
+      border-spacing: 0px;
+    }
+  </style>
+</head>
+<body>
+
+  Get insights that help your business grow.
+
+  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+  experience, and overall efficiency.
+
+  10k+ companies
+  314 templates
+  12m+ queries
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+    <table>
+      <tr>
+        <td colspan="0px">
+          <div class="left">
+            <h1>Get <span>insights</span> that help your business grow.</h1>
+           
+            <p>Discover the benefits of data analytics and make <br> better decisions regarding revenue, customer
+            experience, and overall efficiency.</p><br>
+              
+          </div>
+          <table class="as">
+            <tr><td >
+              <p class="pa">10K+</p>
+              <p>companies</p>
+            </td><td >
+              <p class="pa" >314</p>
+              <p>templates</p>
+            </td><td >
+              <p class="pa" >314</p>
+              <p>templates</p>
+            </td></tr>
+          </table>
+    </td>
+        <td colspan="0px">
+          <div class="con">
+        <img src="../images/image-header-desktop.jpg" alt="image-header-desktop">
+      </div></td>
+    </tr>
+    </table>
+    
+  </div>
+</body>
+</html>
